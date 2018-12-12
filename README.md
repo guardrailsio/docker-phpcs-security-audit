@@ -1,7 +1,7 @@
 # docker-phpcs-security-audit
 Dockerized version of PHPCS-Security-Audit
 
-# About
+## About
 phpcs-security-audit is a set of PHP_CodeSniffer rules that find vulnerabilities and weaknesses related to security in PHP code.
 
 It currently has core PHP rules as well as Drupal 7 specific rules.
@@ -12,16 +12,24 @@ The main reason for this project for being an extension of PHP_CodeSniffer is to
 
 phpcs-security-audit is backed by [Floe design + technologies](https://floedesign.ca/) and written by [Jonathan Marcil](https://twitter.com/jonathanmarcil).
 
-# Run
+## Run
 
-## Default Rules
+### Default Rules
 
 ```bash
 docker run -v /path/to/code/:/opt/mount/ guardrails/phpcs-security-audit:latest
 ```
 
-## JSON Output
+### JSON Output
 
 ```bash
 docker run -t -v `pwd`:/opt/mount/ guardrails/phpcs-security-audit:latest --report=json
 ```
+
+## Contributing
+
+Have some improvements? Send a pull request! Thank you!
+
+## Support
+
+This repository is supported by [GuardRails.io](https://www.guardrails.io).
